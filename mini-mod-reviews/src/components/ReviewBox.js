@@ -1,15 +1,16 @@
 import React from 'react'
-import BlogBox from './BlogBox'
 
-class Home extends React.Component {
+class ReviewBox extends React.Component {
     
     render() {
+    
         return (
-            this.props.blog.map((elem) => {
-                return <BlogBox elem={elem} key={elem.id} setSingleBlog={this.props.setSingleBlog} home={this.props.home}/>
-            })
+            <>
+                <div className="ReviewBox">ReviewBox</div>
+            </>
+            
         )
     }
 }
 
-export default Home
+export default ReviewBox

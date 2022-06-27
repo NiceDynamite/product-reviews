@@ -34,20 +34,20 @@ class App extends React.Component {
     //   .then((response) => response.json())
     //   .then((data) => this.setState({blog: data}))
     // }
-    const changeSingleBlog = () => {
-      this.setState({home: true, singleBlog: null})
-    }
+    // const changeSingleBlog = () => {
+    //   this.setState({home: true, singleBlog: null})
+    // }
 
-    const setSingleBlog = (e) => {
-      fetch(`/blog/${e.target.id}`)
-      .then((response) => response.json())
-      .then((data) => this.setState({home: false, singleBlog: data}))
-    }
+    // const setSingleBlog = (e) => {
+    //   fetch(`/blog/${e.target.id}`)
+    //   .then((response) => response.json())
+    //   .then((data) => this.setState({home: false, singleBlog: data}))
+    // }
 
-    const deleteBlogbyId = (id) => {
-      fetch(`/blog/${id}`, {method: 'DELETE'})
-      .then((data) => this.setState({home: true, singleBlog: null}))
-    }
+    // const deleteBlogbyId = (id) => {
+    //   fetch(`/blog/${id}`, {method: 'DELETE'})
+    //   .then((data) => this.setState({home: true, singleBlog: null}))
+    // }
     
 
     if(this.state.loading) {

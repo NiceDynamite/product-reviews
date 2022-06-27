@@ -1,7 +1,2 @@
-
-# Working now?
-=======
 # This is my file.
-Clone of targets reviews
-In progress.
-
+I am trying to fix all the pulls

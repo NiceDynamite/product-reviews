@@ -20,7 +20,7 @@ const getReviews = async (req, res) => {
     try{
         const data = await pool.query('SELECT * FROM reviews');
         console.log(data);
-        res.send(data);
+        res.send(data.rows);
     }
     catch (error){
         console.log(error);

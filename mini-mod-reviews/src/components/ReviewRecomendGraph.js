@@ -6,7 +6,7 @@ class ReviewRecomendGraph extends React.Component {
     
         return (
             <>
-                <div className="MRecomendCircleGraph">ReviewRecomendCircleGraph</div>
+                <div className="RecomendCircleGraph">ReviewRecomendCircleGraph</div>
             </>
             
         )

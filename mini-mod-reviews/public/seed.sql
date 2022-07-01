@@ -1,10 +1,10 @@
 DELETE FROM users;
 DELETE FROM reviews;
-INSERT INTO users (userName,pass,email) VALUES ('user1','password','someemail1@email.com');
-INSERT INTO users (userName,pass,email) VALUES ('user2','wordpass','someemail2@email.com');
-INSERT INTO users (userName,pass,email) VALUES ('user3','asd123','someemail3@email.com');
-INSERT INTO users (userName,pass,email) VALUES ('user4','123asd','someemail4@email.com');recommend, rating, verified-purchaser
-INSERT INTO reviews (user_id,review_date,title,review, recommend, rating, verified-purchaser) VALUES (1,'02-12-2022','someTitle1','this is some review 1',TRUE,TRUE);
-INSERT INTO reviews (user_id,review_date,title,review, recommend, rating, verified-purchaser) VALUES (2,'03-12-2022','someTitle2','this is some review 2',TRUE,TRUE);
-INSERT INTO reviews (user_id,review_date,title,review, recommend, rating, verified-purchaser) VALUES (3,'04-12-2022','someTitle3','this is some review 3',FALSE,FALSE);
-INSERT INTO reviews (user_id,review_date,title,review, recommend, rating, verified-purchaser) VALUES (4,'05-12-2022','someTitle4','this is some review 4',FALSE,FALSE);
+INSERT INTO users (user_id,userName,pass,email) VALUES (1,'user1','password','someemail1@email.com');
+INSERT INTO users (user_id,userName,pass,email) VALUES (2,'user2','wordpass','someemail2@email.com');
+INSERT INTO users (user_id,userName,pass,email) VALUES (3,'user3','asd123','someemail3@email.com');
+INSERT INTO users (user_id,userName,pass,email) VALUES (4,'user4','123asd','someemail4@email.com');
+INSERT INTO reviews (user_id, review_date, title, review, recommend, rating, verified_purchaser) VALUES (1,'02-12-2022','someTitle1','this is some review 1',TRUE,4.5,TRUE);
+INSERT INTO reviews (user_id, review_date, title, review, recommend, rating, verified_purchaser) VALUES (2,'03-12-2022','someTitle2','this is some review 2',TRUE,4.0,TRUE);
+INSERT INTO reviews (user_id, review_date, title, review, recommend, rating, verified_purchaser) VALUES (3,'04-12-2022','someTitle3','this is some review 3',FALSE,3.8,FALSE);
+INSERT INTO reviews (user_id, review_date, title, review, recommend, rating, verified_purchaser) VALUES (4,'05-12-2022','someTitle4','this is some review 4',FALSE,3.4,FALSE);

@@ -4,7 +4,7 @@ const req = require('express/lib/request');
 const app = express();
 const cors = require('cors');
 const db = require('./public/queries');
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 5004;
 
 app.listen(port,function(){
     console.log(`Listing on port ${port}`);

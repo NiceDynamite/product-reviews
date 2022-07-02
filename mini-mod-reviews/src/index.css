@@ -1,4 +1,4 @@
-html * {
+/* html * {
   border: solid 1px;
 }
 body {
@@ -13,13 +13,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} 
 
 #root{
 
   margin-left: 15%;
   margin-right:15%;
-}
+}*/
 .Main {
   border-top: solid;
   text-align: center;

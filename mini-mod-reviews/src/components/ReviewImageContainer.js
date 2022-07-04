@@ -1,5 +1,5 @@
 import React from 'react'
-import ReviewImages from './ReviewImages'
+import ReviewSingleImage from './ReviewSingleImage'
 
 class ReviewImageContainer extends React.Component {
     
@@ -7,10 +7,11 @@ class ReviewImageContainer extends React.Component {
     
         return (
             <>
-                <div className="ImagesTitle">Review Images</div>
-                <div className="ImageContainer">
-                    <ReviewImages/>
-                </div>
+                <div className="ImageContainer">{
+                    this.props.reviews.map((elem, index) => {
+                    return <ReviewSingleImage elem={elem} />
+                    })   
+                }</div>
             </>
         )
     }

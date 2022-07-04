@@ -17,38 +17,11 @@ class App extends React.Component {
   componentDidMount() {
   fetch(`http://localhost:${port}/reviews`)
   .then((response) => response.json())
-  .then((data) => this.setState({reviews: data, loading: false}));
+  .then((data) => {this.setState({reviews: data, loading: false}); console.log(data)})
+  .then(() => console.log("Mounted"));
   }
 
   render() {
-    // const setSingleTodo = (e) => {
-    //   fetch(`https://jsonplaceholder.typicode.com/todos/${e.target.id}`)
-    //   .then((response) => response.json())
-    //   .then((data) => this.setState({singleTodo: data}))
-    // }
-    // const changeSingleState = () => {
-    //   this.setState({singleTodo: null})
-    // }
-    // const getBlog = () => {
-    //   fetch(`localhost5555/home`)
-    //   .then((response) => response.json())
-    //   .then((data) => this.setState({blog: data}))
-    // }
-    // const changeSingleBlog = () => {
-    //   this.setState({home: true, singleBlog: null})
-    // }
-
-    // const setSingleBlog = (e) => {
-    //   fetch(`/blog/${e.target.id}`)
-    //   .then((response) => response.json())
-    //   .then((data) => this.setState({home: false, singleBlog: data}))
-    // }
-
-    // const deleteBlogbyId = (id) => {
-    //   fetch(`/blog/${id}`, {method: 'DELETE'})
-    //   .then((data) => this.setState({home: true, singleBlog: null}))
-    // }
-    
 
     if(this.state.loading) {
       return (
@@ -58,8 +31,6 @@ class App extends React.Component {
     
     return (
        <Main reviews={this.state.reviews}/>
-      // this.state.user ? <Home home={this.state.home}/>
-      // : <Login user={this.state.user}/>
     )
   }
 }

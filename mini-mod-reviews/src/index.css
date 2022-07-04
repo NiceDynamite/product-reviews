@@ -23,8 +23,22 @@ code {
 .Main {
   border-top: solid;
   text-align: center;
+  font-family: "Helvetica for Target", HelveticaForTarget, Targetica, "HelveticaNeue for Target", 
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: larger;
+  font-size: 23px;
+  text-size-adjust: 100%;
+  margin-bottom: 8px;
+  padding-top: 40px;
+}
+.MainOther{
+  text-align: center;
+  font-family: "Helvetica for Target", HelveticaForTarget, Targetica, "HelveticaNeue for Target", 
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  margin-bottom: 8px;
 }
 .graphContainer{
   display: flex;
@@ -43,4 +57,12 @@ code {
 }
 .ValueCircleGraphs{
   background-color: red;
+}
+.ImageContainer{
+  display: flex;
+  flex-direction: row;
+}
+.ReviewSingleImage {
+  height: 125px;
+  width: 125px;
 }

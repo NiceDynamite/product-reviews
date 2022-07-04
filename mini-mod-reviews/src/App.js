@@ -1,24 +1,24 @@
 import React from 'react'
 import Loading from './components/Loading'
 import Main from './components/Main'
-const port = process.env.PORT || 5555;
+const port = process.env.PORT || 5004;
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      loading: false,
-      review: false,
+      loading: true,
+      reviews: null,
       main: true,
       loadingMessage: `Connected to port:${port} App is loading...`
     }
   }
   
-  // componentDidMount() {
-  // fetch(`/home`)
-  // .then((response) => response.json())
-  // .then((data) => this.setState({blog: data, loading: false}));
-  // }
+  componentDidMount() {
+  fetch(`http://localhost:${port}/reviews`)
+  .then((response) => response.json())
+  .then((data) => this.setState({reviews: data, loading: false}));
+  }
 
   render() {
     // const setSingleTodo = (e) => {
@@ -57,7 +57,7 @@ class App extends React.Component {
     }
     
     return (
-       <Main/>
+       <Main reviews={this.state.reviews}/>
       // this.state.user ? <Home home={this.state.home}/>
       // : <Login user={this.state.user}/>
     )

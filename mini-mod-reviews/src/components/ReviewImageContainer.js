@@ -8,8 +8,9 @@ class ReviewImageContainer extends React.Component {
         return (
             <>
                 <div className="ImageContainer">{
-                    this.props.reviews.map((elem, index) => {
+                    this.props.reviews.slice(0, 5).map((elem, index) => {
                     return <ReviewSingleImage elem={elem} />
+                    index++;
                     })   
                 }</div>
             </>

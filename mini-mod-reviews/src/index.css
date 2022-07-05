@@ -108,12 +108,11 @@ code {
   
 }
 .BoxContentsLeft {
-width: 60%;
-height: 84px;
+  width: 72%;
+  flex-grow: 100%;
 }
-.BoxContentsLeft {
-  width: 40%;
-  height: 84px;
+.BoxContentsRight {
+  width: 359px;
 }
 .BoxRatingContainer {
   display: flex;

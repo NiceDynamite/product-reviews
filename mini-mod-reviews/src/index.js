@@ -5,6 +5,7 @@ import './circleGraph.css';
 import './star.css';
 import './BarGraph.css';
 import './TastQualityValue.css';
+import './SortingBar.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

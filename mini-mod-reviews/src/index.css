@@ -88,13 +88,6 @@ code {
   border-radius: 6px;
   align-items: center;
 }
-.ReviewSortingBar {
-  background-color: #f7f7f7;
-  height: 85.69;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 16px;
-}
 .ReviewBoxContainer {
   padding: 16px;
   display: flex;

@@ -1,0 +1,48 @@
+.ReviewSortingBar {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    height: 85.69;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+  .SortingBoxSortBy {
+    background-color: white;
+    border-radius: 6px;
+    border-color: #666666ca;
+  }
+  .SortingBoxFilterBy {
+    background-color: white;
+    border-radius: 6px;
+    border-color: #666666ca;
+  }
+  .SortingBarSpacer {
+    width: 70%;
+  }
+  .SortingBarCheckBoxContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+    align-content: center;
+  }
+  .SortingCheckBoxWithPhotosContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .SortingCheckBoxVerifiedContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .WithPhotoSpacer {
+    width: 25px;
+  }
+  .SortingCheckBox {
+    width: 20px;
+    height: 20px;
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 12px;
+  }

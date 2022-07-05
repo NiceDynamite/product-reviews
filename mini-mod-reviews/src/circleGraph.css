@@ -1,49 +1,31 @@
-.single-chart {
-    width: 33%;
-    justify-content: space-around ;
+.RecommendContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 179px;
+    text-align: center;
   }
-  
-  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
+   .RecommendContainer .chart-container {
+    padding: 0px;
   }
-  
-  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
+   .RecommendContainer .chart-container .back {
+    stroke: #8d99ae;
+    stroke-width: 4px;
   }
-  
-  .circle {
-    fill: none;
-    stroke-width: 2.8;
+   .RecommendContainer .chart-container .front {
+    stroke: green;
+    stroke-width: 4px;
     stroke-linecap: round;
-    animation: progress 1s ease-out forwards;
+    stroke-dasharray: 51,0,0;
+    transform: rotate(-90deg);
+    transform-origin: center;
   }
-  
-  @keyframes progress {
-    0% {
-      stroke-dasharray: 0 100;
-    }
+   .RecommendContainer .chart-container .text {
+    font-size: 15px;
   }
-  
-  .circular-chart.orange .circle {
-    stroke: #ff9f00;
+  .CircleGraphWouldRecommend {
+    font-size: 16px;
   }
-  
-  .circular-chart.green .circle {
-    stroke: #4CC790;
-  }
-  
-  .circular-chart.blue .circle {
-    stroke: #3c9ee5;
-  }
-  
-  .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
+  .Recommendations{
+    font-size: 14px;
   }

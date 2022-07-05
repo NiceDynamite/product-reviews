@@ -9,9 +9,10 @@ class ReviewStarGraphContainer extends React.Component {
         return (
             <>
                 <ReviewStarGraph/>
-                <ReviewRecomendGraph/>
+                <div className="RecommendContainer">
+                    <ReviewRecomendGraph/>
+                </div>
             </>
-            
         )
     }
 }

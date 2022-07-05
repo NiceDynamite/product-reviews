@@ -1,0 +1,19 @@
+.StarRating{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.StyledRatingStar {
+    height: 30px;
+    width: 80px;
+}
+.ratingNumber {
+    font-size: 40px;
+    text-size-adjust: 100%;
+    font-weight: bold !important;
+    text-align: center;
+}
+.ReviewCount {
+    text-align: center;
+    font-size: 14px !important;
+}

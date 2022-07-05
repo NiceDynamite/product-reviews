@@ -7,7 +7,7 @@ class ReviewBoxContainer extends React.Component {
     
         return (
             <div className="ReviewBoxContainer">{
-                this.props.reviews.map((elem) => {
+                this.props.reviews.slice(0, 8).map((elem) => {
                     return <ReviewBox elem={elem}/>
                 })
             }</div>

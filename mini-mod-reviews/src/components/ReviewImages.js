@@ -1,14 +1,15 @@
 import React from 'react'
+import ReviewSingleImage from './ReviewSingleImage'
+
 
 class ReviewImages extends React.Component {
     
-    render() {
     
-        return (
-            <>
-                <div className="Images">Images go here</div>
-            </>
-            
+    render() { 
+        return(
+            this.props.reviews.map((elem) => {
+                return <ReviewSingleImage elem={elem} />
+            })        
         )
     }
 }

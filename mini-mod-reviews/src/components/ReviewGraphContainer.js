@@ -1,6 +1,6 @@
 import React from 'react'
 import ReviewBarGraph from './ReviewBarGraph'
-import ReviewStarGraph from './ReviewStarGraph'
+import ReviewStarGraphContainer from './ReviewStarGraphContainer'
 
 class ReviewGraphContainer extends React.Component {
     
@@ -9,7 +9,7 @@ class ReviewGraphContainer extends React.Component {
         return (
             <div className="graphContainer">
                 <ReviewBarGraph/>
-                <ReviewStarGraph/>
+                <ReviewStarGraphContainer/>
             </div>
             
         )

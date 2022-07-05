@@ -1,0 +1,41 @@
+.ValueCircleGraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .tqvGroupContainer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+  }
+   .ValueCircleGraphs .tqvchart-container {
+    padding: 0px;
+    
+  }
+   .ValueCircleGraphs .tqvchart-container .tqvback {
+    stroke: rgba(218, 214, 214, 0.205);
+    stroke-width: 2px;
+  }
+   .ValueCircleGraphs .tqvchart-container .tqvfront {
+    stroke: green;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-dasharray: 51,0,0;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+   .ValueCircleGraphs .tqvchart-container .tqvtext {
+    font-size: 15px;
+  }
+  .ValueOutOf {
+    font-size: 14px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  .OutOf{
+    font-weight: lighter;
+    color: #666666;
+  }

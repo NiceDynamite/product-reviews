@@ -1,0 +1,32 @@
+.RecommendContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 179px;
+    text-align: center;
+  }
+   .RecommendContainer .chart-container {
+    padding: 0px;
+  }
+   .RecommendContainer .chart-container .back {
+    stroke: rgba(218, 214, 214, 0.205);
+    stroke-width: 4px;
+  }
+   .RecommendContainer .chart-container .front {
+    stroke: green;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-dasharray: 51,0,0;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+   .RecommendContainer .chart-container .text {
+    font-size: 15px;
+  }
+  .CircleGraphWouldRecommend {
+    font-size: 16px;
+  }
+  .Recommendations{
+    font-size: 14px;
+    color: #666666;
+  }

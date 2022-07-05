@@ -1,7 +1,6 @@
 import React from 'react'
-import ReviewRecomendGraph from './ReviewRecomendGraph'
 import ReviewValueCircleGraphs from './ReviewValueCircleGraphs'
-import ReviewImages from './ReviewImages'
+import ReviewImageContainer from './ReviewImageContainer'
 import ReviewButton from './ReviewButton'
 import ReviewSortingBar from './ReviewSortingBar'
 import ReviewBoxContainer from './ReviewBoxContainer'
@@ -15,13 +14,12 @@ class Main extends React.Component {
             <>
                 <div className="Main">Guest Ratings & Reviews</div>
                 <ReviewGraphContainer/>
-                <ReviewRecomendGraph/>
                 <ReviewValueCircleGraphs/>
                 <div className="MainOther">Review images</div>
-                <ReviewImages/>
+                <ReviewImageContainer reviews={this.props.reviews}/>
                 <ReviewButton/>
                 <ReviewSortingBar/>
-                <ReviewBoxContainer/>
+                <ReviewBoxContainer reviews={this.props.reviews}/>
                 <ReviewButton/>
             </>
             

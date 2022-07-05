@@ -9,7 +9,7 @@
     padding: 0px;
   }
    .RecommendContainer .chart-container .back {
-    stroke: #8d99ae;
+    stroke: rgba(218, 214, 214, 0.205);
     stroke-width: 4px;
   }
    .RecommendContainer .chart-container .front {
@@ -28,4 +28,5 @@
   }
   .Recommendations{
     font-size: 14px;
+    color: #666666;
   }

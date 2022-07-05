@@ -13,13 +13,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} 
-
-#root{
-
-  margin-left: 15%;
-  margin-right:15%;
 }*/
+
+.reviews, html {
+  font-family: "Helvetica for Target", HelveticaForTarget, Targetica, "HelveticaNeue for Target", 
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .reviews{
   display: flex;
   justify-content: center;
@@ -27,8 +26,6 @@ code {
 .Main {
   border-top: solid;
   text-align: center;
-  font-family: "Helvetica for Target", HelveticaForTarget, Targetica, "HelveticaNeue for Target", 
-  "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 23px;
   text-size-adjust: 100%;
@@ -39,8 +36,6 @@ code {
 .MainOther{
   justify-content: center;
   text-align: center;
-  font-family: "Helvetica for Target", HelveticaForTarget, Targetica, "HelveticaNeue for Target", 
-  "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-size-adjust: 100%;
@@ -62,9 +57,6 @@ code {
 .RecomendCircleGraph{
   display: flex;
 }
-.ValueCircleGraphs{
-  background-color: red;
-}
 .ImageContainer{
   display: flex;
   justify-content: center;
@@ -72,8 +64,132 @@ code {
 }
 .ReviewSingleImage {
   border: solid 1px;
+  border-color: #6666662a;
   margin-top: 16px;
   margin-right: 16px;
   height: 125px;
   width: 125px;
+}
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+.ReviewButton {
+  width: 98.45px;
+  background-color: #cc0000;
+  font-size: 12px;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  border-radius: 6px;
+  align-items: center;
+}
+.ReviewSortingBar {
+  background-color: #f7f7f7;
+  height: 85.69;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 16px;
+}
+.ReviewBoxContainer {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.ReviewBox {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  border-color: #6666662a;
+  margin: 16px;
+  padding: 20px;
+}
+.BoxSplit {
+  display: flex;
+  flex-direction: row;
+  
+}
+.BoxContentsLeft {
+width: 60%;
+height: 84px;
+}
+.BoxContentsLeft {
+  width: 40%;
+  height: 84px;
+}
+.BoxRatingContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.BoxRating {
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: solid 1px;
+  border-color: #6666662a;
+}
+.DaysAgo {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #666666;
+}
+.BoxReviewText {
+  margin-top: 16px;
+  font-size: 14px;
+}
+.BoxContentsRight {
+  display: flex;
+  flex-direction: column;
+}
+.BoxValues {
+  height: 29px;
+}
+.WasThisHelpful {
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #666666;
+}
+.BoxHelpfulReport {
+ display: flex;
+ flex-direction: row;
+}
+.Helpful {
+  display: flex;
+  flex-direction: row;
+}
+.HelpfulButton {
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  width: 120px;
+  height: 24px;
+  text-align: center;
+  border: solid 1px;
+  border-color: #666666;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.NotHelpfulButton {
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  width: 120px;
+  height: 24px;
+  text-align: center;
+  border: solid 1px;
+  border-color: #666666;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.BoxReport {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #666666;
 }

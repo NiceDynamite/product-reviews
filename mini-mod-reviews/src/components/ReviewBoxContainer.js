@@ -6,9 +6,11 @@ class ReviewBoxContainer extends React.Component {
     render() {
     
         return (
-            this.props.reviews.map((elem) => {
-                return <ReviewBox elem={elem}/>
-            })
+            <div className="ReviewBoxContainer">{
+                this.props.reviews.map((elem) => {
+                    return <ReviewBox elem={elem}/>
+                })
+            }</div>
         )
     }
 }
